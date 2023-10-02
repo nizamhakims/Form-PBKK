@@ -21,7 +21,7 @@ class FormController extends Controller{
         ]);
 
         $request->Image->storeAs('public/images', $request->Image->getClientOriginalName());
-
+        
         $results = [
             'Username' => $request->Username,
             'Password' => $request->Password,
